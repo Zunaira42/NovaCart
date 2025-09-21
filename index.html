@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <title>NovaCart</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <h2 class="logo fw-bold ">NovaCart</h2>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- banner -->
+  <div id="banner" class="banner">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-11">
+          <div class="container-center mt-5 mb-5">
+            <h1 class="header text-center mt-5"></h1>
+            <p class="sub-header text-center mt-3 mb-3" data-aos="fade-up" data-aos-delay="500">The ECommerce Website
+            </p>
+            <span class="information text-center mb-5" data-aos="fade-up" data-aos-delay="600">Welcome to NovaCart
+              Store, your one-stop destination<br>
+              for trendy products at unbeatable prices.From fashion to gadgets, <br>we bring you the best
+              deals with fast delivery and secure payments .</span>
+            <div class="d-flex justify-content-center mt-5 mb-5">
+              <button class="btn btn-outline-dark" data-aos="fade-up" data-aos-delay="700">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- timeer -->
+  <!-- Stats Section -->
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3 class="display-5 fw-bold" id="customers">0</h3>
+          <p class="timer-text">Happy Customers</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="display-5 fw-bold" id="products">0</h3>
+          <p class="timer-text">Products Sold</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="display-5 fw-bold" id="orders">0</h3>
+          <p class="timer-text">Orders Delivered</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="display-5 fw-bold" id="timer">00:00:00</h3>
+          <p class="timer-text">Flash Sale Ends In</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- amazon -->
+  <section id="amazon" class="amazon-banner py-5">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h1 class="amazon-header fw-bold">Amazon Services Provider</h1>
+          <hr class="first">
+          <hr class="second">
+          <hr class="third">
+        </div>
+      </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 col-12">
+          <h3 class="management">Amazon Account Management</h3>
+          <p class="setup mt-4 fw-bold">Account Setup and Registration</p>
+          <p class="text-muted">Assistance with opening and registering Amazon Seller or Vendor Central
+            accounts. Compliance guidance for Amazon policies and regulations.</p>
+
+          <p class="setup mt-5 fw-bold">Account Health Management</p>
+          <p class="text-muted">Monitoring performance metrics (Order Defect Rate, Late Shipment Rate, etc.)
+            and addressing account suspension or reinstatement issues.</p>
+        </div>
+        <div class="col-lg-6 col-12 d-flex justify-content-center mt-4 mt-lg-0">
+          <img src="images/amazon.png" class="img-fluid" alt="Amazon Management">
+        </div>
+      </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 col-12 d-flex justify-content-center mb-4 mb-lg-0">
+          <img src="images/mobile.png" class="img-fluid" alt="Product Listing">
+        </div>
+        <div class="col-lg-6 col-12">
+          <h3 class="management">Product Listing & Optimization</h3>
+          <p class="setup mt-4 fw-bold">Listing Creation</p>
+          <p class="text-muted">Crafting SEO-optimized product titles, bullet points, and descriptions
+            with high-quality images that comply with Amazon’s guidelines.</p>
+
+          <p class="setup mt-5 fw-bold">Listing Optimization</p>
+          <p class="text-muted">Keyword research and integration for better discoverability.
+            A/B testing for product titles, descriptions, and pricing.</p>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-12">
+          <h3 class="management">Advertising & Marketing Services</h3>
+          <p class="setup mt-4 fw-bold">Amazon Advertising Campaigns (PPC)</p>
+          <p class="text-muted">Setting up Sponsored Products, Sponsored Brands, and Sponsored Display Ads.
+            Campaign optimization to improve ACOS and ROAS.</p>
+
+          <p class="setup mt-5 fw-bold">Promotions & Deals</p>
+          <p class="text-muted">Creating Lightning Deals, Coupons, and Discounts with seasonal and holiday
+            promotional strategies.</p>
+        </div>
+        <div class="col-lg-6 col-12 d-flex justify-content-center mt-4 mt-lg-0">
+          <img src="images/group.png" class="img-fluid" alt="Amazon Advertising">
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- amazon -->
+  <!-- inventory -->
+  <div class="inv-mang">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="main-heading  mt-5 mb-4">Inventory and Fulfillment Management</h1>
+          <div class="row row-eq-height">
+            <div class="col-lg-6 mb-lg-0 mb-md-0 mb-3">
+              <div class="sec-block">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2 class="sub-heading">Inventory Planning</h2>
+                    <ul class="bullets">
+                      <li>Stock forecasting to avoid stockouts or overstocking.</li>
+                      <li>Recommendations for FBA (Fulfilled by Amazon) vs. FBM (Fulfilled by
+                        Merchant).</li>
+                      <li>Prevents stockouts and overstocking.</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 d-flex justify-content-center flex-column ">
+                    <img src="images/img-1.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="sec-block">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2 class="sub-heading">FBA Management</h2>
+                    <ul class="bullets">
+                      <li>Guidance for shipping inventory to Amazon fulfillment centers.</li>
+                      <li>Choosing the right fulfillment method to optimize costs.</li>
+                      <li>Monitoring FBA fee structure and optimization.</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 d-flex justify-content-center flex-column ">
+                    <img src="images/img-2.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 mb-4">
+          <h1 class="main-heading mt-5 mb-4">Brand Protection and Growth</h1>
+          <div class="row row-eq-height">
+            <div class="col-lg-6 mb-md-0 mb-3">
+              <div class="sec-block">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2 class="sub-heading">Brand Protection and Growth</h2>
+                    <ul class="bullets">
+                      <li>Assistance with Amazon Brand Registry enrollment.</li>
+                      <li>Leveraging enhanced brand content (A+ Content) to boost conversions.</li>
+                      <!-- <li>Automated stock monitoring and restock alerts.</li> -->
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 d-flex justify-content-center flex-column ">
+                    <img src="images/img-3.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="sec-block">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2 class="sub-heading">Trademark and Copyright</h2>
+                    <ul class="bullets">
+                      <li>Protection against counterfeit sellers.</li>
+                      <li>Monitoring and removing unauthorized listings</li>
+                      <li>Monitoring and reducing Amazon storage & fulfillment fees.</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 d-flex justify-content-center flex-column ">
+                    <img src="images/img-4.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-lg-12">
+          <h1 class="main-heading  mt-5 mb-4">Sales and Analytics Reporting</h1>
+          <div class="row row-eq-height">
+            <div class="col-lg-6 mb-md-0 mb-3">
+              <div class="sec-block">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2 class="sub-heading">Data-Driven Insights</h2>
+                    <ul class="bullets">
+                      <li>Sales performance analysis.</li>
+                      <li>Market and competitor analysis.</li>
+                      <li>Weekly/monthly inventory reports</li>
+                      <li>SKU-level insights to boost efficiency and profit margins.</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 d-flex justify-content-center flex-column ">
+                    <img src="images/img-5.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="sec-block">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2 class="sub-heading">Customized Reporting</h2>
+                    <ul class="bullets">
+                      <li>Weekly and monthly reporting on sales, inventory, and advertising
+                        performance.</li>
+                      <li>Ensuring compliance with Amazon packaging & labeling requirements.</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 d-flex justify-content-center flex-column ">
+                    <img src="images/img-6.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- inventory -->
+  <!-- Services -->
+  <section id="landing-services" class="landing-services mb-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h1 class="service fw-bold mt-4 mt-lg-5">Our Services</h1>
+          <hr class="first">
+          <hr class="second">
+          <hr class="third">
+        </div>
+      </div>
+      <div class="row text-center mt-lg-2 mt-2 align-items-stretch">
+        <div class="col-lg-3 col-md-6 col-12 d-flex mt-4">
+          <div class="box-widge flex-fill">
+            <div class="ser-img">
+              <img src="images/store.png" class="img-fluid d-block mx-auto mt-4" alt="Product Catalog">
+            </div>
+            <p class="box-heading">Wide Product Range</p>
+            <p class="box-text">Explore thousands of products across multiple categories to find exactly what you need.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 d-flex mt-4">
+          <div class="box-widge flex-fill">
+            <div class="ser-img">
+              <img src="images/product.png" class="img-fluid d-block mx-auto mt-4" alt="Secure Payment">
+            </div>
+            <p class="box-heading">Secure Payments</p>
+            <p class="box-text">Pay safely using multiple secure payment options including credit cards, UPI, and
+              digital wallets.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 d-flex mt-4">
+          <div class="box-widge flex-fill">
+            <div class="ser-img">
+              <img src="images/phone.png" class="img-fluid d-block mx-auto mt-4" alt="Fast Delivery">
+            </div>
+            <p class="box-heading">Fast Delivery</p>
+            <p class="box-text">Get your orders delivered quickly with reliable shipping and tracking options.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 d-flex mt-4">
+          <div class="box-widge flex-fill">
+            <div class="ser-img">
+              <img src="images/order.png" class="img-fluid d-block mx-auto mt-4" alt="Customer Support">
+            </div>
+            <p class="box-heading">24/7 Support</p>
+            <p class="box-text">Our support team is available around the clock to help you with orders, returns, or
+              queries.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 d-flex mt-4">
+          <div class="box-widge flex-fill">
+            <div class="ser-img">
+              <img src="images/icon-1.png" class="img-fluid d-block mx-auto mt-4" alt="Loyalty Programs">
+            </div>
+            <p class="box-heading">Loyalty Programs</p>
+            <p class="box-text">Earn points and rewards on every purchase to get discounts and exclusive deals.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 d-flex mt-4">
+          <div class="box-widge flex-fill">
+            <div class="ser-img">
+              <img src="images/icon-2.png" class="img-fluid d-block mx-auto mt-4" alt="Easy Returns">
+            </div>
+            <p class="box-heading">Easy Returns</p>
+            <p class="box-text">Hassle-free returns and exchanges to ensure you are completely satisfied with your
+              purchase.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 d-flex mt-4">
+          <div class="box-widge flex-fill">
+            <div class="ser-img">
+              <img src="images/icon-3.png" class="img-fluid d-block mx-auto mt-4" alt="Gift Cards">
+            </div>
+            <p class="box-heading">Gift Cards</p>
+            <p class="box-text">Send a gift card to your loved ones and let them choose their favorite products.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 d-flex mt-4">
+          <div class="box-widge flex-fill">
+            <div class="ser-img">
+              <img src="images/icon-4.png" class="img-fluid d-block mx-auto mt-4" alt="Mobile App">
+            </div>
+            <p class="box-heading">Mobile App</p>
+            <p class="box-text">Shop on the go with our fast and user-friendly mobile app available for Android and iOS.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- products -->
+  <!-- Featured Products Slider -->
+  <section id="products" class="product bg-light mt-5 py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h1 class="heading fw-bold">Featured Products</h1>
+          <hr class="first">
+          <hr class="second">
+          <hr class="third">
+        </div>
+      </div>
+
+      <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-3 col-sm-6">
+                <div class="card h-100 shadow-sm border-0">
+                  <img src="images/shoes.webp" class="card-img-top" alt="Wireless Earbuds">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Shoes</h5>
+                    <p class="card-text fw-bold">$49.99 <span
+                        class="text-muted text-decoration-line-through">$69.99</span></p>
+                    <button class="btn btn-outline-dark w-100">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <div class="card h-100 shadow-sm border-0">
+                  <img src="images/watch.webp" class="card-img-top" alt="Smart Watch">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Smart Watch</h5>
+                    <p class="card-text fw-bold">$79.99 <span
+                        class="text-muted text-decoration-line-through">$99.99</span></p>
+                    <button class="btn btn-outline-dark w-100">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <div class="card h-100 shadow-sm border-0">
+                  <img src="images/skin.png" class="card-img-top" alt="Bluetooth Speaker">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Skin Care</h5>
+                    <p class="card-text fw-bold">$39.99 <span
+                        class="text-muted text-decoration-line-through">$59.99</span></p>
+                    <button class="btn btn-outline-dark w-100">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <div class="card h-100 shadow-sm border-0">
+                  <img src="images/wireless.webp" class="card-img-top" alt="Gaming Mouse">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Wireless Earbuds</h5>
+                    <p class="card-text fw-bold">$29.99 <span
+                        class="text-muted text-decoration-line-through">$39.99</span></p>
+                    <button class="btn btn-outline-dark w-100">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 (more products) -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-3 col-sm-6">
+                <div class="card h-100 shadow-sm border-0">
+                  <img src="images/camera.png" class="card-img-top" alt="Bluetooth Speaker">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Camera</h5>
+                    <p class="card-text fw-bold">$39.99 <span
+                        class="text-muted text-decoration-line-through">$59.99</span></p>
+                    <button class="btn btn-outline-dark w-100">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="card h-100 shadow-sm border-0">
+                  <img src="images/moisturizer.png" class="card-img-top" alt="Bluetooth Speaker">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">moisturizer</h5>
+                    <p class="card-text fw-bold">$39.99 <span
+                        class="text-muted text-decoration-line-through">$59.99</span></p>
+                    <button class="btn btn-outline-dark w-100">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="card h-100 shadow-sm border-0">
+                  <img src="images/perfume.png" class="card-img-top" alt="Bluetooth Speaker">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">perfume</h5>
+                    <p class="card-text fw-bold">$39.99 <span
+                        class="text-muted text-decoration-line-through">$59.99</span></p>
+                    <button class="btn btn-outline-dark w-100">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="card h-100 shadow-sm border-0">
+                  <img src="images/lipstick.png" class="card-img-top" alt="Bluetooth Speaker">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Lip stick</h5>
+                    <p class="card-text fw-bold">$39.99 <span
+                        class="text-muted text-decoration-line-through">$59.99</span></p>
+                    <button class="btn btn-outline-dark w-100">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-4"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-4"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- products -->
+  <!--footer-->
+  <div class="footer-wrapper">
+    <section id="footer" class="footer  text-white">
+      <div class="container">
+        <div class="row" style="margin-top: 6rem;">
+          <div class="col-md-4 col-12">
+            <div class="company-info">
+              <h1 class="title mb-3 fw-bold text-black">NovaCart</h1>
+              <p class="text-light small">
+                At NovaCart , we are committed to offering businesses all around the world the best
+                UI/UX
+                design, web app development, mobile app development, Q/A testing, and custom software
+                development services.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <h5 class="footer-title mb-3  ">Quick Links</h5>
+            <ul class="list-unstyled footer-links ">
+              <li><a href="#" class="links">Dedicated Team</a></li>
+              <li><a href="#" class="links">Fixed Price</a></li>
+              <li><a href="#" class="links">Project About</a></li>
+              <li><a href="#" class="links">Careers Blog</a></li>
+              <li><a href="#" class="links">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-6 mb-4">
+            <h5 class="footer-title mb-3">Resources</h5>
+            <ul class="list-unstyled resource-links">
+              <li><a href="#" class="resource-link">E-Commerce</a></li>
+              <li><a href="#" class="resource-link">Marketing</a></li>
+              <li><a href="#" class="resource-link">Development</a></li>
+              <li><a href="#" class="resource-link">Design</a></li>
+              <li><a href="#" class="resource-link">Technical</a></li>
+              <li><a href="#" class="resource-link">Business Setup</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-12  mb-4 ">
+            <h5 class="footer-title mb-3">Company</h5>
+            <ul class="list-unstyled footer-links  ">
+              <li> <strong class="bold">Call:&nbsp;&nbsp;</strong><a href="tel:+1(206) 333-4342" class="links">+1(206)
+                  333-4342</a>
+              </li>
+              <li><strong class="bold">Call:&nbsp;&nbsp;</strong> <a href="tel:+923064765893" class="links">+92
+                  306476-5893</a></li>
+              <li>
+                <strong class="bold">Email:&nbsp;&nbsp;</strong> <a href="contact@roboosters.com"
+                  class="links">contact@NovaCart.com</a>
+              </li>
+            </ul>
+            <div class="social-links d-flex align-items-center gap-2">
+              <i class="bi bi-facebook" style="font-size: 2rem; color: black;"></i>
+              <i class="bi bi-instagram" style="font-size: 2rem; color: black;"></i>
+              <i class="bi bi-linkedin" style="font-size: 2rem; color: black;"></i>
+            </div>
+          </div>
+
+          <form id="contact-form" method="POST">
+            <div class="col-12">
+              <div class="contact-form">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <input type="text" name="name" class="form-control form-control-sm" placeholder="Name" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <input type="email" name="email" class="form-control form-control-sm" placeholder="Email"
+                          required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <input type="text" name="phone" class="form-control form-control-sm" placeholder="Phone Number">
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <input type="text" name="subject" class="form-control form-control-sm"
+                          placeholder="Your Subject">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-7 mb-3 position-relative">
+                    <textarea class="form-control form-control-sm h-100 pe-5" name="message" rows="4"
+                      placeholder="Your message" required></textarea>
+                    <button type="submit"
+                      style="position: absolute; right: 25px; bottom: 15px; border: none; background: transparent; padding: 0;">
+                      <img src="images/submit.png" style="width: 24px; height: 24px;">
+                    </button>
+                  </div>
+                </div>
+                <div id="form-message"></div>
+          </form>
+        </div>
+      </div>
+      <div class="divided-line mt-4 mb-4">
+        <hr>
+      </div>
+      <div class="col-12">
+        <div class="footer-end text-center color-white">
+          <p>All rights reserved. | Legal | Security | Privacy Policy</p>
+        </div>
+      </div>
+  </div>
+  </section>
+  <!--footer-->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
